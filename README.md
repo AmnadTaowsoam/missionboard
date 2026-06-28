@@ -1,40 +1,46 @@
 ﻿# MissionBoard
 
-A mission control board that turns goals into missions, tasks, owners, status, evidence, review, approval, and decision logs.
+agent mission control product foundation with enterprise-grade frontend expectations and production-shaped backend documentation.
 
-## Product Position
+## What This Repo Should Become
 
-MissionBoard is a **Agent Task Board / Mission Control** in the Cerebra Forge Labs / ForgeOps Labs public product set. It is designed as a public, useful tool while Cerebra MCP remains the orchestration and governance factory behind the scenes.
+MissionBoard is designed to be cloned, started, and extended into a real product. The documentation now defines the complete target implementation: premium UI, backend modules, data model, API, jobs, environment, testing, and release gates.
 
-## Why This Project Matters
+## Clone-And-Run Target
 
-It is the visible UI for a virtual agent organization and could become one of the strongest Cerebra MCP showcases, although it is larger than the first product should be.
+~~~bash
+git clone https://github.com/AmnadTaowsoam/missionboard.git
+cd missionboard
+cp .env.example .env
+pnpm install
+pnpm dev
+~~~
 
-The goal is not to publish a shallow demo. The repository should become a buildable product foundation with clear requirements, delivery gates, and enough implementation detail for a developer or AI coding agent to start from zero and ship a usable MVP.
+Primary command:
 
-## Target Users
-
-AI delivery teams, technical program managers, agent operations teams, engineering managers
-
-## Core Workflow
-
-1. Capture the user's intent and required inputs.
-2. Validate the inputs against the product-specific quality bar.
-3. Generate or inspect the target artifact.
-4. Show findings, assumptions, risks, and next actions.
-5. Export or hand off the result in a format that is useful outside the app.
+~~~bash
+pnpm dev
+~~~
 
 ## Documentation
 
 - [Project brief](docs/brief.md)
 - [Requirements](docs/requirements.md)
+- [Enterprise frontend spec](docs/frontend-enterprise.md)
+- [Backend implementation spec](docs/backend-implementation.md)
+- [Clone-and-run quickstart](docs/quickstart.md)
+- [Environment and configuration](docs/environment.md)
+- [Testing and quality plan](docs/testing-and-quality.md)
 - [Architecture](docs/architecture.md)
 - [Roadmap](docs/roadmap.md)
 - [Delivery checklist](docs/delivery-checklist.md)
 
-## Recommended First Build
+## Implementation Standard
 
-Build one complete happy path first, then add integrations and automation. The MVP should prove that MissionBoard can deliver its core output reliably before broadening scope.
+- Frontend: enterprise, premium, luxury-grade UX where applicable.
+- Backend: full workflow, API, jobs, persistence, audit, security, exports.
+- Local dev: mock mode must work without paid external services.
+- Release: tests, visual QA, security checks, and clone-and-run proof.
 
 ## License
 
